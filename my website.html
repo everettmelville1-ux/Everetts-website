@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Awesome website 100</title>
+    <style>
+    button {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size:32px;
+    width:64px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Hey everett</h1>
+    <p>This is your website. which is very cool. jsdnfjnjnjsdef. Here is a link, and some more links too.: <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank">google snake!</a></p>
+    <ul>
+      <li><a href="https://slopegame-online.com/" target="_blank">slope!</a></li>
+      <li><a href="https://matharoo.itch.io/rl2d" target="_blank">rocket league</a></li>
+      <li><a href="https://www.coolmathgames.com/" target="_blank">cool math games</a></li>
+
+    </ul>
+    <div>
+      <div style="border: 5px dashed green; height: 50vh; margin: 4px; width: 20%; margin-left: auto">
+        <h1 style="text-align: center">Calculator</h1><h3 style="text-align: center">refresh to clear!</h3>
+        <p style="border: 1px solid blue; width: 80%; height: 25px; margin-left: auto; margin-right: auto" id="calcDisplay"></p>
+        <table style="margin: auto">
+          <tr>
+            <td><button onclick="appendNumber(1)">1</button></td>
+            <td><button onclick="appendNumber(2)">2</button></td>
+            <td><button onclick="appendNumber(3)">3</button></td>
+            <td><button onclick="appendNumber('+')">+</button></td>
+          </tr>
+          <tr><td><button onclick="appendNumber(4)">4</button></td>
+            <td><button onclick="appendNumber(5)">5</button></td>
+            <td><button onclick="appendNumber(6)">6</button></td>
+            <td><button onclick="appendNumber('-')">-</button></td>
+          </tr>
+          <tr><td><button onclick="appendNumber(7)">7</button></td>
+            <td><button onclick="appendNumber(8)">8</button></td>
+            <td><button onclick="appendNumber(9)">9</button></td>
+            <td><button onclick="appendNumber('/')">/</button></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button onclick="appendNumber(0)">0</button></td>
+            <td><button onclick="appendNumber('.')">.</button></td>
+            <td><button onclick="solution()">=</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+    function appendNumber(num) {
+      document.getElementById('calcDisplay').textContent+= num;
+    }
+    function solution() {
+       NUMBERS=document.getElementById('calcDisplay');
+       NUMBERS.textContent=eval(NUMBERS.textContent);
+    }
+    </script> 
+  </body>
+</html>
